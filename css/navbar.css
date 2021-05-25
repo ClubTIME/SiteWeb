@@ -1,10 +1,12 @@
 .topnav {
     background-color: #333;
     overflow: hidden;
+    display: flex;
 }
 
 .topnav a {
     float: left;
+    margin: auto;
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -13,12 +15,47 @@
     font-size: 17px;
 }
 
-.topnav>div {
+.topnav h3 {
     float: left;
+    margin: auto;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20pt;
+}
+
+.topnav>div {
+    display: flex;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    padding: 14px 16px;
+}
+
+.topnav>div:first-child {
+    float: left;
+    margin-left: 0;
 }
 
 .topnav>div:nth-child(2) {
     float: right;
+    margin-right: 0;
+}
+
+.topnav>div:nth-child(3) {
+    display: none;
+    margin-right: 0;
+}
+
+.topnav>div:first-child>img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    float: left;
+    display: block;
+    text-decoration: none;
 }
 
 .topnav a:hover:not(:first-child) {
@@ -31,15 +68,11 @@
     color: white;
 }
 
-.topnav .icon {
-    display: none;
-}
-
 @media screen and (max-width: 650px) {
-    .topnav div:not(:first-child) a:not(:last-child) {
+    .topnav div:nth-child(2) {
         display: none;
     }
-    .topnav a.icon {
+    .topnav div:nth-child(3) {
         float: right;
         display: block;
     }
@@ -47,20 +80,25 @@
 
 @media screen and (max-width: 650px) {
     .topnav.responsive {
+        display: block;
         position: relative;
     }
-    .topnav.responsive a.icon {
+    .topnav.responsive div:nth-child(3) {
         position: absolute;
+        height: fit-content;
+        margin: 0;
         right: 0;
         top: 0;
     }
-    .topnav.responsive div:nth-child(2) a:not(:last-child) {
+    .topnav.responsive div:nth-child(2) {
         width: 100%;
         display: block;
         text-align: left;
+        padding: 0;
     }
-    .topnav.responsive div:nth-child(2) {
-        float: left;
+    .topnav.responsive div:nth-child(2) a {
         width: 100%;
+        display: block;
+        text-align: left;
     }
 }
