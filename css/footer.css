@@ -2,7 +2,10 @@
     background-color: #666;
     overflow: hidden;
     display: flex;
-    padding: 10px;
+    padding: 1%;
+    position: relative;
+    bottom: 0;
+    width: 98%;
 }
 
 .footer a {
@@ -70,10 +73,10 @@
 }
 
 @media screen and (max-width: 730px) {
-    h2 {
+    .footer h2 {
         font-size: 14pt;
     }
-    p {
+    .footer p {
         font-size: 8pt;
     }
     .footer img {
@@ -84,13 +87,5 @@
     }
     .footer>div:nth-child(2) {
         width: 50%;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
     }
 }

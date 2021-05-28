@@ -1,23 +1,35 @@
 .container-accueil {
-    display: flexbox;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 70%;
-    height: 90%;
+    min-height: 70vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .video-responsive {
     overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
+    display: inline-block;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .video-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
+    width: 640px;
+    height: 360px;
+}
+
+@media screen and (max-width: 730px) {
+    .video-responsive iframe {
+        width: 480px;
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .video-responsive iframe {
+        width: 320px;
+        height: 180px;
+    }
 }
