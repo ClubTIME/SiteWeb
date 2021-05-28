@@ -86,3 +86,11 @@
         width: 50%;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
