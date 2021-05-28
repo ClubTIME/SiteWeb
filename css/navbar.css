@@ -37,16 +37,23 @@
 .topnav>div:first-child {
     float: left;
     margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    cursor: pointer;
 }
 
 .topnav>div:nth-child(2) {
     float: right;
     margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .topnav>div:nth-child(3) {
     display: none;
     margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .topnav>div:first-child>img {
