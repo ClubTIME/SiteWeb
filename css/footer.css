@@ -2,6 +2,7 @@
     background-color: #666;
     overflow: hidden;
     display: flex;
+    padding: 10px;
 }
 
 .footer a {
@@ -32,7 +33,9 @@
 }
 
 .footer>div:nth-child(1)>div {
-    display: inline-block;
+    display: inline-flex;
+    flex-flow: row wrap;
+    width: 100%;
 }
 
 .footer>div:nth-child(2)>div {
@@ -48,4 +51,38 @@
 
 .footer .icon {
     font-size: 16pt;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.footer .icon:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer p {
+    font-size: 10pt;
+}
+
+.footer h2 {
+    margin: auto;
+    width: fit-content;
+    border-bottom: rgba(255, 255, 255, 0.8) solid 2px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 730px) {
+    h2 {
+        font-size: 14pt;
+    }
+    p {
+        font-size: 8pt;
+    }
+    .footer img {
+        width: 150px;
+    }
+    .footer>div:nth-child(1) {
+        width: 50%;
+    }
+    .footer>div:nth-child(2) {
+        width: 50%;
+    }
 }
