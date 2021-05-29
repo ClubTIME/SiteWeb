@@ -1,15 +1,10 @@
-.footer {
+footer {
+    flex-shrink: 0;
     background-color: #666;
-    overflow: hidden;
     display: flex;
-    padding: 1%;
-    position: fixed;
-    bottom: 0;
-    width: 98%;
-    height: 30%;
 }
 
-.footer a {
+footer a {
     float: left;
     margin: auto;
     display: block;
@@ -20,7 +15,7 @@
     font-size: 17px;
 }
 
-.footer>div {
+footer>div {
     display: block;
     margin: auto;
     margin-top: 0;
@@ -28,65 +23,65 @@
     text-align: center;
 }
 
-.footer>div:nth-child(1) {
+footer>div:nth-child(1) {
     width: 60%;
 }
 
-.footer>div:nth-child(2) {
+footer>div:nth-child(2) {
     width: 40%;
 }
 
-.footer>div:nth-child(1)>div {
+footer>div:nth-child(1)>div {
     display: inline-flex;
     flex-flow: row wrap;
     width: 100%;
 }
 
-.footer>div:nth-child(2)>div {
+footer>div:nth-child(2)>div {
     display: inline-block;
 }
 
-.footer img {
+footer img {
     width: 180px;
     margin: auto;
     text-decoration: none;
     vertical-align: middle;
 }
 
-.footer .icon {
+footer .icon {
     font-size: 16pt;
     color: rgba(0, 0, 0, 0.8);
 }
 
-.footer .icon:hover {
+footer .icon:hover {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.footer p {
+footer p {
     font-size: 10pt;
 }
 
-.footer h2 {
+footer h2 {
     margin: auto;
     width: fit-content;
     border-bottom: rgba(255, 255, 255, 0.8) solid 2px;
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 730px) {
-    .footer h2 {
+@media screen and (max-width: 750px) {
+    footer h2 {
         font-size: 14pt;
     }
-    .footer p {
+    footer p {
         font-size: 8pt;
     }
-    .footer img {
+    footer img {
         width: 150px;
     }
-    .footer>div:nth-child(1) {
+    footer>div:nth-child(1) {
         width: 50%;
     }
-    .footer>div:nth-child(2) {
+    footer>div:nth-child(2) {
         width: 50%;
     }
 }

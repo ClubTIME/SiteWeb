@@ -7,11 +7,11 @@ body {
 }
 
 html {
-    height: 100%;
+    /* height: 100%; */
 }
 
 body {
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 p {
@@ -29,4 +29,10 @@ h6 {
 
 h2 {
     font-size: 20pt
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }

@@ -8,7 +8,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="icon" href="img/logoCT.png">
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/navbar.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/header.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/footer.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/accueil.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,7 +16,7 @@
 
 <body>
 
-    <div class="topnav" id="myTopnav">
+    <!-- <div class="topnav" id="myTopnav">
         <div onclick="redirectAccueil();">
             <img src="img/logoCT.png">
             <h3>Club TIME</h3>
@@ -52,11 +52,6 @@
                 <img src="img/partenaire/smeno.png">
                 <img src="img/partenaire/pumpkin.png">
             </div>
-            <!-- <div>
-                <img src="img/partenaire/bnpParibas.png">
-                <img src="img/partenaire/smeno.png">
-                <img src="img/partenaire/pumpkin.png">
-            </div> -->
         </div>
 
         <div>
@@ -76,10 +71,66 @@
             <p>Résidence Léonard de Vinci - Batiment D <br> 400 Avenue Paul Langevin <br> 59650 Villeneuve-d’Ascq</p>
         </div>
 
+    </div> -->
+
+    <div class="container">
+        <header class="" id="myHeader">
+            <div onclick="redirectAccueil();">
+                <img src="img/logoCT.png">
+                <h3>Club TIME</h3>
+            </div>
+
+            <div>
+                <a href="accueil.html" class="active">Accueil</a>
+                <a href="#presentation.html">Présentation</a>
+                <a href="#thrombinoscope.html">Thrombinoscope</a>
+                <a href="#tutoriel.html">Tutoriels</a>
+            </div>
+
+            <div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+        <main class="content">
+            <div class="video-responsive">
+                <iframe src="https://www.youtube.com/embed/sMbJ5IBaqUI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </main>
+        <footer class="" id="myFooter">
+            <div>
+                <h2>Partenaire</h2>
+                <div>
+                    <img src="img/partenaire/bnpParibas.png">
+                    <img src="img/partenaire/smeno.png">
+                    <img src="img/partenaire/pumpkin.png">
+                </div>
+            </div>
+
+            <div>
+                <h2>Contact</h2>
+                <p>clubtimecentralelille@gmail.com</p>
+                <div>
+                    <a href="#" class="icon">
+                        <i class="fa fa-facebook-official"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+                <p>Résidence Léonard de Vinci - Batiment D <br> 400 Avenue Paul Langevin <br> 59650 Villeneuve-d’Ascq
+                </p>
+            </div>
+
+        </footer>
     </div>
 
     <script src='js/main.js'></script>
-    <script src='js/navbar.js'></script>
+    <script src='js/header.js'></script>
 
 </body>
 

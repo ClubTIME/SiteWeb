@@ -1,10 +1,9 @@
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-    display: flex;
+header {
+    flex-shrink: 0;
+    background-color: #666;
 }
 
-.topnav a {
+header a {
     float: left;
     margin: auto;
     display: block;
@@ -13,9 +12,10 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    max-width: 96%;
 }
 
-.topnav h3 {
+header h3 {
     float: left;
     margin: auto;
     display: block;
@@ -26,7 +26,7 @@
     font-size: 20pt;
 }
 
-.topnav>div {
+header>div {
     display: flex;
     margin: auto;
     top: 0;
@@ -34,7 +34,7 @@
     padding: 14px 16px;
 }
 
-.topnav>div:first-child {
+header>div:first-child {
     float: left;
     margin-left: 0;
     margin-top: 0;
@@ -42,21 +42,21 @@
     cursor: pointer;
 }
 
-.topnav>div:nth-child(2) {
+header>div:nth-child(2) {
     float: right;
     margin-right: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.topnav>div:nth-child(3) {
+header>div:nth-child(3) {
     display: none;
     margin-right: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.topnav>div:first-child>img {
+header>div:first-child>img {
     width: 50px;
     height: 50px;
     margin: auto;
@@ -65,44 +65,45 @@
     text-decoration: none;
 }
 
-.topnav a:hover:not(:first-child) {
+header a:hover:not(:first-child) {
     background-color: #ddd;
     color: black;
 }
 
-.topnav a.active {
+header a.active {
     background-color: #04AA6D;
     color: white;
 }
 
-@media screen and (max-width: 730px) {
-    .topnav div:nth-child(2) {
+@media screen and (max-width: 750px) {
+    header div:nth-child(2) {
         display: none;
     }
-    .topnav div:nth-child(3) {
+    header div:nth-child(3) {
         float: right;
         display: block;
     }
-    .topnav.responsive {
+    header.responsive {
         display: block;
         position: relative;
     }
-    .topnav.responsive div:nth-child(3) {
+    header.responsive div:nth-child(3) {
         position: absolute;
         height: fit-content;
         margin: 0;
         right: 0;
         top: 0;
     }
-    .topnav.responsive div:nth-child(2) {
+    header.responsive div:nth-child(2) {
         width: 100%;
-        display: block;
-        text-align: left;
+        display: flex;
+        flex-direction: column;
         padding: 0;
     }
-    .topnav.responsive div:nth-child(2) a {
-        width: 100%;
-        display: block;
+    header.responsive div:nth-child(2) a {
+        display: flexbox;
+        margin-left: 0;
+        margin-right: 0;
         text-align: left;
     }
 }
