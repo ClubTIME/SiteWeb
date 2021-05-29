@@ -3,9 +3,10 @@
     overflow: hidden;
     display: flex;
     padding: 1%;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 98%;
+    height: 30%;
 }
 
 .footer a {
