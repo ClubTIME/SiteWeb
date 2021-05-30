@@ -1,8 +1,24 @@
 main {
     flex: 1 0 auto;
     display: flex;
+    flex-direction: row;
     padding-top: 2%;
     padding-bottom: 2%;
+}
+
+.headerAccueil {
+    background-color: transparent;
+}
+
+.accueil-text {
+    display: block;
+    text-align: center;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 40%;
 }
 
 .video-responsive {
@@ -13,6 +29,8 @@ main {
     bottom: 0;
     right: 0;
     left: 0;
+    width: 60%;
+    text-align: center;
 }
 
 .video-responsive iframe {
@@ -20,16 +38,51 @@ main {
     height: 360px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1280px) {
+    .video-responsive iframe {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
     .video-responsive iframe {
         width: 480px;
         height: 270px;
     }
 }
 
+@media screen and (max-width: 960px) {
+    .video-responsive iframe {
+        width: 400px;
+        height: 225px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .video-responsive iframe {
+        width: 480px;
+        height: 270px;
+    }
+    main {
+        flex-direction: column;
+    }
+    .accueil-text,
+    .video-responsive {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 550px) {
     .video-responsive iframe {
-        width: 320px;
-        height: 180px;
+        width: 400px;
+        height: 225px;
+    }
+    main {
+        flex-direction: column;
+    }
+    .accueil-text,
+    .video-responsive {
+        width: 100%;
     }
 }

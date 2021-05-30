@@ -1,9 +1,9 @@
 function myFunction() {
     var x = document.getElementById("myHeader");
-    if (x.className === "") {
-        x.className += "responsive";
+    if (x.className === "headerAccueil") {
+        x.className += " responsive";
     } else {
-        x.className = "";
+        x.className = "headerAccueil";
     }
 }
 
