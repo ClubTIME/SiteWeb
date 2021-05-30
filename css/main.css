@@ -9,11 +9,20 @@ body {
 body {
     /* background: url(../img/network_world.jpg) no-repeat 50% 50%;
     background-size: cover; */
+    background-image: url(../img/mountain-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
 }
 
-body::after {
+
+/* body::after {
     content: "";
-    background: url(../img/mountain-background.jpg) no-repeat 50% 50%;
+    background: url(../img/mountain-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     opacity: 1;
     top: 0;
@@ -22,7 +31,8 @@ body::after {
     right: 0;
     position: absolute;
     z-index: -1;
-}
+    height: 100%;
+} */
 
 p {
     font-size: 12pt;
@@ -44,5 +54,4 @@ h2 {
 .container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
