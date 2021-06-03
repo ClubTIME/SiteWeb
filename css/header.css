@@ -1,11 +1,11 @@
 header {
     flex-shrink: 0;
-    background-color: #666;
+    background-color: #666
 }
 
 header a {
     float: left;
-    margin: auto;
+    margin: 5px;
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -57,22 +57,26 @@ header>div:nth-child(3) {
 }
 
 header>div:first-child>img {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     margin: auto;
     float: left;
     display: block;
     text-decoration: none;
 }
 
-header a:hover:not(:first-child) {
-    background-color: #ddd;
-    color: black;
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: black !important;
 }
 
 header a.active {
-    background-color: #04AA6D;
-    color: white;
+    border-bottom: #f2f2f2 solid 2px;
+}
+
+header a.active:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 @media screen and (max-width: 750px) {
@@ -105,5 +109,16 @@ header a.active {
         margin-left: 0;
         margin-right: 0;
         text-align: left;
+    }
+    header a:last-child:hover {
+        background-color: transparent;
+        border-radius: 0;
+        color: #f2f2f260 !important;
+    }
+    header a.active {
+        border-bottom: 0;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        color: black !important;
     }
 }
