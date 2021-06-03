@@ -1,13 +1,14 @@
-main {
-    flex: 1 0 auto;
-    display: flex;
-    flex-direction: row;
-    padding-top: 2%;
-    /* padding-bottom: 2%; */
+.container {
+    height: 723px;
 }
 
-.headerAccueil {
-    background-color: transparent;
+body {
+    background-image: url(../img/mountain-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .accueil-text {

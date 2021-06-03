@@ -3,6 +3,10 @@ header {
     background-color: #666
 }
 
+.headerAccueil {
+    background-color: transparent;
+}
+
 header a {
     float: left;
     margin: 5px;

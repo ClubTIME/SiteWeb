@@ -1,0 +1,26 @@
+main {
+    margin-top: 89px;
+}
+
+main>div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 14px 16px;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+}
+
+header {
+    background-color: rgb(146, 146, 146) !important;
+    position: fixed;
+    width: 100%;
+}
+
+main>div>h3:first-child {
+    font-size: 26pt;
+}
+
+main>div>h3 {
+    font-size: 20pt;
+}
