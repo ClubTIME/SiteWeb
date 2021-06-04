@@ -1,9 +1,16 @@
+main {
+    flex-direction: column;
+}
+
 main>div {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    text-align: justify;
+    margin: 10px;
     color: rgb(0, 0, 0);
+}
+
+main>div:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 main>div>h3:first-child {
@@ -12,4 +19,14 @@ main>div>h3:first-child {
 
 main>div>h3 {
     font-size: 20pt;
+}
+
+main h3,
+main p {
+    margin: 0;
+}
+
+main h3 {
+    width: fit-content;
+    margin-bottom: 10px;
 }

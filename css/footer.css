@@ -2,6 +2,10 @@ footer {
     flex-shrink: 0;
     background-color: rgba(255, 255, 255, 0.1);
     display: flex;
+    border-top: rgba(165, 165, 165, 0.671) solid 1px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-top: 20px;
 }
 
 footer a {
@@ -64,13 +68,13 @@ footer p {
 footer h2 {
     margin: auto;
     width: fit-content;
-    border-bottom: rgba(255, 255, 255, 0.8) solid 2px;
     margin-bottom: 10px;
+    font-size: 14pt;
 }
 
 @media screen and (max-width: 750px) {
     footer h2 {
-        font-size: 14pt;
+        font-size: 12pt;
     }
     footer p {
         font-size: 8pt;
