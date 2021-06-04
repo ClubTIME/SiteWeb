@@ -1,10 +1,12 @@
 header {
     flex-shrink: 0;
-    background-color: #666
+    background-color: #666;
+    position: fixed;
+    width: 100%;
 }
 
 .headerAccueil {
-    background-color: transparent;
+    background-color: #666;
 }
 
 header a {
@@ -93,7 +95,7 @@ header a.active:hover {
     }
     header.responsive {
         display: block;
-        position: relative;
+        position: fixed;
     }
     header.responsive div:nth-child(3) {
         position: absolute;

@@ -11,6 +11,10 @@ body {
     min-height: 100vh;
 }
 
+.headerAccueil {
+    background-color: transparent;
+}
+
 .accueil-text {
     display: flex;
     flex-direction: column;

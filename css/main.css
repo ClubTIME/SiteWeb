@@ -10,7 +10,8 @@ html {
     height: 100%;
 }
 
-body {}
+
+/* body {} */
 
 
 /* body::after {
@@ -51,10 +52,13 @@ main {
     display: flex;
     flex-direction: row;
     padding-top: 2%;
-    /* padding-bottom: 2%; */
+    padding-bottom: 2%;
+    margin-top: 89px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
 }
+
+@media screen and (max-width: 750px) {}
