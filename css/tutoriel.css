@@ -1,0 +1,39 @@
+main {
+    flex-direction: column;
+}
+
+main>div {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(102, 102, 255, 0.493);
+    border-radius: 5px;
+}
+
+main>div:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+main>div>div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main>div>div>i {
+    text-align: center;
+    font-size: 20pt !important;
+    cursor: pointer;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main h2,
+main p,
+main i {
+    margin: 10px;
+}
+
+main h2 {
+    width: fit-content;
+}

@@ -10,4 +10,5 @@ main>div>img {
     display: flex;
     margin: auto;
     width: 90%;
+    border-radius: 10px;
 }
