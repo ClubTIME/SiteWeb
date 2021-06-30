@@ -1,36 +1,30 @@
 header {
     flex-shrink: 0;
-    background-color: #666;
     position: fixed;
     width: 100%;
     height: 80px;
 }
 
 .headerAccueil {
-    background-color: #666;
+    background-color: #fff;
+    /* background-color: transparent; */
 }
 
 header a {
     float: left;
     margin: 5px;
     display: block;
-    color: #f2f2f2;
+    color: rgba(230, 230, 230, 0.9);
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
-    font-size: 17px;
     max-width: 96%;
 }
 
-header h3 {
-    float: left;
-    margin: auto;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20pt;
+header a h4 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 17px;
 }
 
 header>div {
@@ -73,17 +67,18 @@ header>div:first-child>img {
 }
 
 header a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(230, 230, 230, 0.9);
     border-radius: 5px;
     color: black !important;
+    font-weight: 700;
 }
 
 header a.active {
-    border-bottom: #f2f2f2 solid 2px;
+    border-bottom: 3px solid rgba(230, 230, 230, 0.9);
 }
 
 header a.active:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(230, 230, 230, 0.9);
 }
 
 @media screen and (max-width: 750px) {
@@ -110,23 +105,24 @@ header a.active:hover {
         display: flex;
         flex-direction: column;
         padding: 0;
-        background-color: #666;
     }
     header.responsive div:nth-child(2) a {
         display: flexbox;
         margin-left: 0;
         margin-right: 0;
         text-align: left;
+        color: rgba(230, 230, 230, 0.9);
     }
-    header a:last-child:hover {
+    header div:nth-child(3) a:hover {
         background-color: transparent;
         border-radius: 0;
-        color: #f2f2f260 !important;
+        color: rgba(230, 230, 230, 0.6) !important;
     }
     header a.active {
         border-bottom: 0;
-        background-color: rgba(255, 255, 255, 0.2);
-        border-radius: 5px;
-        color: black !important;
+    }
+    header.responsive a.active h4 {
+        width: min-content;
+        border-bottom: 3px solid rgba(230, 230, 230, 0.9);
     }
 }

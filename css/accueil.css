@@ -1,12 +1,14 @@
 .container {
-    height: 723px;
+    /* height: 723px; */
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
 }
 
 body {
-    background-image: url(../img/mountain-background.jpg);
+    background-image: url(../img/touts-background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
     min-height: 100vh;
 }
@@ -18,19 +20,22 @@ body {
 .accueil-text {
     display: flex;
     flex-direction: column;
-    /* margin: auto; */
     text-align: center;
-    width: 40%;
+    width: 100%;
+    margin-top: 60px;
+    color: rgba(230, 230, 230, 0.9);
 }
 
 .accueil-text h1 {
-    color: #f2f2f2b2;
-    font-size: 120pt;
-    font-weight: 500;
+    font-size: 90pt;
+    font-weight: 700;
+    margin-bottom: 0;
 }
 
-.accueil-text h1:nth-child(2) {
-    margin-left: 100px;
+.accueil-text h2 {
+    font-size: 22pt;
+    font-weight: 500;
+    margin-top: 0;
 }
 
 .video-responsive {
@@ -56,22 +61,12 @@ body {
         width: 560px;
         height: 315px;
     }
-    .accueil-text h1 {
-        font-size: 100pt;
-    }
 }
 
 @media screen and (max-width: 1120px) {
     .video-responsive iframe {
         width: 480px;
         height: 270px;
-    }
-    .accueil-text {
-        margin: auto;
-        margin-top: 100px;
-    }
-    .accueil-text h1 {
-        font-size: 80pt;
     }
 }
 
@@ -83,6 +78,9 @@ body {
     .accueil-text h1 {
         font-size: 70pt;
     }
+    .accueil-text h2 {
+        font-size: 18pt;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -90,8 +88,11 @@ body {
         width: 480px;
         height: 270px;
     }
-    .accueil-text {
-        margin: auto;
+    .accueil-text h1 {
+        font-size: 60pt;
+    }
+    .accueil-text h2 {
+        font-size: 16pt;
     }
     main {
         flex-direction: column;
@@ -108,6 +109,9 @@ body {
         height: 225px;
     }
     .accueil-text h1 {
-        font-size: 60pt;
+        font-size: 50pt;
+    }
+    .accueil-text h2 {
+        font-size: 14pt;
     }
 }
