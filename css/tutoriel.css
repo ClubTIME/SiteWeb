@@ -5,8 +5,9 @@ main {
 main>div {
     display: flex;
     flex-direction: row;
-    background-color: rgba(102, 102, 255, 0.493);
+    background-color: rgb(209, 209, 223);
     border-radius: 5px;
+    box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 main>div:not(:last-child) {
