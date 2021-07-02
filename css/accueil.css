@@ -63,12 +63,25 @@ header a.active:hover {
     font-size: 90pt;
     font-weight: 700;
     margin-bottom: 0;
+    animation-duration: 4s;
+    animation-name: slideOpacity;
 }
 
 .accueil-text h2 {
     font-size: 22pt;
     font-weight: 500;
     margin-top: 0;
+    animation-duration: 4s;
+    animation-name: slideOpacity;
+}
+
+@keyframes slideOpacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
 }
 
 .video-responsive {

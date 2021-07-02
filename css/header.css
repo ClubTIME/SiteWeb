@@ -7,7 +7,6 @@ header {
 
 .headerAccueil {
     background-color: rgb(209, 209, 223);
-    /* background-color: transparent; */
 }
 
 header a {
@@ -19,6 +18,7 @@ header a {
     padding: 10px 16px;
     text-decoration: none;
     max-width: 96%;
+    transition: background-color 1.5s ease;
 }
 
 header a h4 {
