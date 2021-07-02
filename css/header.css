@@ -6,7 +6,7 @@ header {
 }
 
 .headerAccueil {
-    background-color: #fff;
+    background-color: rgb(209, 209, 223);
     /* background-color: transparent; */
 }
 
@@ -14,7 +14,7 @@ header a {
     float: left;
     margin: 5px;
     display: block;
-    color: rgba(230, 230, 230, 0.9);
+    color: #000;
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
@@ -67,18 +67,18 @@ header>div:first-child>img {
 }
 
 header a:hover {
-    background-color: rgba(230, 230, 230, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 5px;
-    color: black !important;
+    color: rgba(230, 230, 230, 0.9) !important;
     font-weight: 700;
 }
 
 header a.active {
-    border-bottom: 3px solid rgba(230, 230, 230, 0.9);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.8);
 }
 
 header a.active:hover {
-    background-color: rgba(230, 230, 230, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media screen and (max-width: 750px) {
@@ -105,16 +105,17 @@ header a.active:hover {
         display: flex;
         flex-direction: column;
         padding: 0;
+        background-color: rgb(209, 209, 223);
     }
     header.responsive div:nth-child(2) a {
         display: flexbox;
         margin-left: 0;
         margin-right: 0;
         text-align: left;
-        color: rgba(230, 230, 230, 0.9);
+        color: #000;
     }
     header div:nth-child(3) a:hover {
-        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0.8);
         border-radius: 0;
         color: rgba(230, 230, 230, 0.6) !important;
     }
@@ -123,6 +124,6 @@ header a.active:hover {
     }
     header.responsive a.active h4 {
         width: min-content;
-        border-bottom: 3px solid rgba(230, 230, 230, 0.9);
+        border-bottom: 3px solid rgba(0, 0, 0, 0.8);
     }
 }

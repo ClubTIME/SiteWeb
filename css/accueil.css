@@ -17,6 +17,39 @@ body {
     background-color: transparent;
 }
 
+header a {
+    color: rgba(230, 230, 230, 0.9) !important;
+}
+
+header a:hover {
+    background-color: rgba(230, 230, 230, 0.9);
+    color: black !important;
+}
+
+header a.active {
+    border-bottom: 3px solid rgba(230, 230, 230, 0.9);
+}
+
+header a.active:hover {
+    background-color: rgba(230, 230, 230, 0.9);
+}
+
+@media screen and (max-width: 750px) {
+    header a.active {
+        border-bottom: 0;
+    }
+    header div:nth-child(3) a:hover {
+        background-color: transparent;
+        color: rgba(230, 230, 230, 0.6) !important;
+    }
+    header.responsive div:nth-child(2) {
+        background-color: transparent;
+    }
+    header.responsive a.active h4 {
+        border-bottom: 3px solid rgba(230, 230, 230, 0.6);
+    }
+}
+
 .accueil-text {
     display: flex;
     flex-direction: column;

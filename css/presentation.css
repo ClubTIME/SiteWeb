@@ -7,17 +7,21 @@ main>div {
     flex-direction: column;
     margin: 10px;
     color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(209, 209, 223);
+    box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 main>div:not(:last-child) {
     margin-bottom: 20px;
 }
 
-main>div>h3:first-child {
+main>div h3:first-child {
     font-size: 26pt;
 }
 
-main>div>h3 {
+main>div h3 {
     font-size: 20pt;
 }
 
@@ -29,4 +33,48 @@ main p {
 main h3 {
     width: fit-content;
     margin-bottom: 10px;
+}
+
+.poles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.polesCard {
+    /* background-color: rebeccapurple; */
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+    margin: 10px;
+}
+
+.polesCard>h3 {
+    font-size: 20pt !important;
+}
+
+@media screen and (max-width: 1285px) {
+    .polesCard {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .polesCard {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .polesCard {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .polesCard {
+        width: 100%;
+    }
 }
