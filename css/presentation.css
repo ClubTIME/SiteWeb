@@ -9,7 +9,7 @@ main>div {
     color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 10px;
-    background-color: rgb(209, 209, 223);
+    background-color: rgb(204, 204, 204);
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 
@@ -48,7 +48,7 @@ main h3 {
     padding: 10px;
     width: 30%;
     margin: 10px;
-    background-color: rgb(195, 195, 218);
+    background-color: rgba(255, 255, 255, 0.63);
     box-shadow: 5px 5px 3px #aaaaaa;
 }
 

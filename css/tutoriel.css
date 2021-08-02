@@ -5,7 +5,7 @@ main {
 main>div {
     display: flex;
     flex-direction: row;
-    background-color: rgb(209, 209, 223);
+    background-color: rgb(204, 204, 204);
     border-radius: 5px;
     box-shadow: 10px 10px 5px #aaaaaa;
 }
