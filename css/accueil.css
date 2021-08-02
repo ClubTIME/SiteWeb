@@ -21,7 +21,7 @@ header a {
     color: rgba(230, 230, 230, 0.9) !important;
 }
 
-header a:hover {
+header a:not(.drapeaux):hover {
     background-color: rgba(230, 230, 230, 0.9);
     color: black !important;
 }
