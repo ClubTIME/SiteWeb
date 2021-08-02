@@ -1,0 +1,163 @@
+.container {
+    /* height: 723px; */
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+}
+
+body {
+    background-image: url(../img/toutsG1-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.headerAccueil {
+    background-color: transparent;
+}
+
+header a {
+    color: rgba(230, 230, 230, 0.9) !important;
+}
+
+header a:not(.drapeaux):hover {
+    background-color: rgba(230, 230, 230, 0.9);
+    color: black !important;
+}
+
+header a.active {
+    border-bottom: 3px solid rgba(230, 230, 230, 0.9);
+}
+
+header a.active:hover {
+    background-color: rgba(230, 230, 230, 0.9);
+}
+
+@media screen and (max-width: 750px) {
+    header a.active {
+        border-bottom: 0;
+    }
+    header div:nth-child(3) a:hover {
+        background-color: transparent;
+        color: rgba(230, 230, 230, 0.6) !important;
+    }
+    header.responsive div:nth-child(2) {
+        background-color: transparent;
+    }
+    header.responsive a.active h4 {
+        border-bottom: 3px solid rgba(230, 230, 230, 0.6);
+    }
+}
+
+.accueil-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+    color: rgba(230, 230, 230, 0.9);
+}
+
+.accueil-text h1 {
+    font-size: 90pt;
+    font-weight: 700;
+    margin-bottom: 0;
+    animation-duration: 4s;
+    animation-name: slideOpacity;
+}
+
+.accueil-text h2 {
+    font-size: 22pt;
+    font-weight: 500;
+    margin-top: 0;
+    animation-duration: 4s;
+    animation-name: slideOpacity;
+}
+
+@keyframes slideOpacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+.video-responsive {
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 60%;
+    text-align: center;
+}
+
+.video-responsive iframe {
+    width: 640px;
+    height: 360px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1280px) {
+    .video-responsive iframe {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .video-responsive iframe {
+        width: 480px;
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .video-responsive iframe {
+        width: 400px;
+        height: 225px;
+    }
+    .accueil-text h1 {
+        font-size: 70pt;
+    }
+    .accueil-text h2 {
+        font-size: 18pt;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .video-responsive iframe {
+        width: 480px;
+        height: 270px;
+    }
+    .accueil-text h1 {
+        font-size: 60pt;
+    }
+    .accueil-text h2 {
+        font-size: 16pt;
+    }
+    main {
+        flex-direction: column;
+    }
+    .accueil-text,
+    .video-responsive {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .video-responsive iframe {
+        width: 400px;
+        height: 225px;
+    }
+    .accueil-text h1 {
+        font-size: 50pt;
+    }
+    .accueil-text h2 {
+        font-size: 14pt;
+    }
+}

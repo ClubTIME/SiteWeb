@@ -1,0 +1,25 @@
+main>div {
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+main>div>img {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+    animation-duration: 4s;
+    animation-name: slideOpacityImg;
+}
+
+@keyframes slideOpacityImg {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
